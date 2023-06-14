@@ -16,14 +16,15 @@
         padding: 0 19px;
 
     }
-
-    .category .categoryItem img.main {
-        scale: 0.8;
+    
+    .category .slick-slide.slick-center img.main {
+        transform: scale(1.4);
     }
 
-    /* .category .slick-slide.slick-center .categoryItem img.catItemBg {
-        scale: 1;
-    } */
+    .category .slick-slide.slick-center img.catItemBg {
+        animation: fadeInlaptops 2s;
+        scale: 0.7;
+    }
 
     .toppingsMain {
         text-align: center;
@@ -78,9 +79,7 @@
         left: 6%;
     }
 
-    .category .slick-slide.slick-center img.main {
-        transform: scale(1.4);
-    }
+   
 
     .galleryGrid {
         grid-template-columns: 295px 248px 248px;
@@ -137,10 +136,15 @@
     .category .slick-slide.slick-center img.main {
         transform: scale(1.2);
     }
-
+    
+    .category .slick-slide.slick-center img.catItemBg {
+        animation: fadeIntab 2s;
+        scale: 0.6;
+    }
+/* 
     .category .slick-slide.slick-center .categoryItem img.catItemBg {
         scale: 1.4;
-    }
+    } */
 
     .categoryBadge {
         top: 28%;
@@ -214,7 +218,8 @@
         transform: scale(1.06);
     }
 
-    .category .slick-slide.slick-center .categoryItem img.catItemBg {
+    .category .slick-slide.slick-center img.catItemBg {
+        animation: fadeInPhone 2s;
         scale: 1.1;
     }
 

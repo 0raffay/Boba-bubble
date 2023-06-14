@@ -65,15 +65,21 @@ function navBar() {
 function menuOpen(){
     const menuBtn = $('.openMenu')
     const menuList = $('.menuList')
+    const arrowUp = $('.arr-up')
+    const arrowDown = $('.arr-down')
     let isOpen = false;
 
     menuBtn.click(function(){
         if(isOpen){
             menuList.slideUp()
+            arrowUp.hide()
+            arrowDown.show()
             isOpen = false;
         }
         else{
             menuList.slideDown()
+            arrowUp.show()
+            arrowDown.hide()
             isOpen = true;
         }
     })

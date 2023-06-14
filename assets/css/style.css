@@ -232,6 +232,9 @@ header .container {
     display: none;
 }
 
+.arr-up {
+    display: none;
+}
 
 .mobile-nav {
     display: none;
@@ -417,6 +420,47 @@ header .container {
     }
 }
 
+
+@keyframes fadeInDesktop {
+    0% {
+        scale: 0;
+    }
+
+    100% {
+        scale: 1.3;
+    }
+}
+
+@keyframes fadeInlaptops {
+    0% {
+        scale: 0;
+    }
+
+    100% {
+        scale: 0.7;
+    }
+}
+
+@keyframes fadeIntab {
+    0% {
+        scale: 0;
+    }
+
+    100% {
+        scale: 0.6;
+    }
+}
+
+@keyframes fadeInPhone {
+    0% {
+        scale: 0;
+    }
+
+    100% {
+        scale: 1.1;
+    }
+}
+
 /* utilities classes just add these */
 
 .hr-animation-container {
@@ -494,9 +538,6 @@ header .container {
 
 .category .categoryItem {
     height: 700px;
-}
-
-.category .categoryItem {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -504,9 +545,6 @@ header .container {
     /* cursor: pointer; */
 }
 
-.category .slick-slide.slick-center .categoryItem:hover .categoryBadge {
-    opacity: 1;
-}
 
 .categoryBadge {
     opacity: 0;
@@ -530,6 +568,10 @@ header .container {
     text-decoration: none;
 }
 
+.category .slick-slide.slick-center .categoryItem:hover .categoryBadge {
+    opacity: 1;
+}
+
 .category .categoryItem img.main {
     max-width: 200px;
     width: 100%;
@@ -542,20 +584,16 @@ header .container {
     transform: scale(1.7);
 }
 
-.category .slick-slide.slick-center img.catItemBg {
-    opacity: 1;
-    transition: all 1s;
-
-}
-
 .category .categoryItem img.catItemBg {
     position: absolute;
     max-width: 100%;
-    height: 80%;
-    transition: all 1s;
-    opacity: 0;
+    visibility: hidden;
+}
+
+.category .slick-slide.slick-center img.catItemBg {
+    visibility: initial;
+    animation: fadeInDesktop 2s;
     scale: 1.3;
-    transition: all 1s;
 }
 
 .category .slick-slide {
@@ -582,8 +620,6 @@ header .container {
 .category .slick-next::after {
     content: url('../images/arrow-right.png');
 }
-
-
 
 .category .slick-prev {
     left: 15%;
@@ -791,7 +827,7 @@ button:focus {
     bottom: 0;
 }
 
-.toppingSlider .slick-dots li button:before{
+.toppingSlider .slick-dots li button:before {
     color: rgba(255, 255, 255, 0.7);
     opacity: 1;
     height: 7px;
@@ -799,11 +835,11 @@ button:focus {
     border-radius: 100%;
 }
 
-.toppingSlider .slick-dots li{
+.toppingSlider .slick-dots li {
     width: 4.6px;
 }
 
-.toppingSlider .slick-dots li.slick-active button:before{
+.toppingSlider .slick-dots li.slick-active button:before {
     color: #fff;
 }
 
@@ -995,10 +1031,11 @@ section.about>h4 {
     background-color: #E64699;
 }
 
-.aboutcards:hover .aboutCardText p{
+.aboutcards:hover .aboutCardText p {
     color: #fff;
 }
-.aboutcards:hover .aboutCardText h6{
+
+.aboutcards:hover .aboutCardText h6 {
     color: #fff;
 }
 
