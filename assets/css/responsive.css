@@ -1,0 +1,166 @@
+@media only screen and (max-width: 992px) {
+
+    section>h4 {
+        font-size: 64px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .heading-white::before {
+        left: -23%;
+    }
+
+    .heading-white {
+        z-index: -2;
+        padding: 0 19px;
+
+    }
+
+    .category .categoryItem img.catItemBg {
+        scale: 1;
+    }
+
+    .toppingsMain {
+        text-align: center;
+        padding: 33px 0;
+    }
+
+    .toppingSlider .slick-dots {
+        text-align: center;
+        padding: 0;
+    }
+
+    .cravingsMain .panel {
+        flex-direction: row;
+    }
+
+    .cravingsText h5 {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .cravingsText p {
+        font-size: 19px;
+        line-height: 112%;
+    }
+
+    .cravingsImg {
+        max-width: 100%;
+    }
+
+    .toppingsText h5 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .toppingsText p {
+        font-size: 18px;
+        line-height: 20px
+    }
+
+    .panel {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .category .slick-next {
+        right: 10%;
+    }
+
+    .category .slick-prev {
+        left: 6%;
+    }
+
+    .category .slick-slide.slick-center img.main {
+        transform: scale(1.4);
+    }
+
+    .galleryGrid {
+        grid-template-columns: 295px 248px 248px;
+        /* grid-template-rows: 298px 298px 220px  325px; */
+        grid-template-rows: auto auto auto auto;
+        grid-auto-flow: dense;
+        gap: 5px;
+        padding: 0 5px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .ftTimings .follow {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    section {
+        padding: 50px 0 !important;
+    }
+
+    section.noPadding {
+        padding: 0 !important;
+    }
+
+    .real {
+        padding: 30px 0 !important;
+    }
+    
+    .heading-white {
+        padding: 0;
+    }
+    
+    section>h4 {
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
+
+    .real-overlay {
+        top: -4px;
+    }
+
+    .category .categoryItem {
+        height: 100%;
+        min-height: 414px;
+    }
+
+    .category .slick-slide.slick-center img.main {
+        transform: scale(1.2);
+    }
+
+    .category .categoryItem img.catItemBg {
+        scale: 1.4;
+    }
+
+    .categoryBadge {
+        top: 28%;
+        left: 24%;
+        padding: 10px 20px 11px 20px;
+    }
+
+    .categoryBadge a {
+        font-size: 20px;
+        line-height: 100%;
+    }
+
+    .galleryGrid{
+        grid-template-columns: auto auto auto;
+    }
+
+    .mobile-nav {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+    .newsInput input{
+        padding: 22px 0 21px 20px;
+        font-size: 14px;
+    }
+} 

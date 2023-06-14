@@ -9,18 +9,853 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- slick css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
 
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 
     <title>Home - Boba Bubble</title>
 </head>
 
 <body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./assets/images/logo.png" alt="">
+            </div>
+
+            <nav>
+                <ul class="navList">
+                    <li><a href="#" class="active">About Us</a></li>
+                    <li class="openMenu">Our Menu <ion-icon name="chevron-down-outline"></ion-icon></i>
+                        <ul class="menuList">
+                            <li><a href="#"><img src="./assets/images/menuItemImg1.png" alt="">Our Flavors</a></li>
+                            <li><a href="#"><img src="./assets/images/menuItemImg2.png" alt="">Our Toppings</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Catering</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Certifications</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="headerBtn">
+                <a href="#" class="btn btn-primary"><img src="./assets/images/drink-img.png" alt="">Online Order</a>
+            </div>
+
+            <div class="burger-menu" id="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+
+            <div class="mobile-nav">
+                <div class="mobileLogo">
+                    <img src="assets/images/logo.png" alt="logo">
+                    <button class="cross" id="crossNav"><ion-icon name="add-outline"></ion-icon></button>
+                </div>
+
+                <ul class="mobileNavList">
+                    <li><a href="#" class="active">About Us</a></li>
+                    <li class="openMenu openMenuPhone">Our Menu <ion-icon name="chevron-down-outline"></ion-icon></i>
+                        <ul class="menuList menuListPhone">
+                            <li><a href="#"><img src="./assets/images/menuItemImg1.png" alt="">Our Flavors</a></li>
+                            <li><a href="#"><img src="./assets/images/menuItemImg2.png" alt="">Our Toppings</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Catering</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Certifications</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+
+
+            </div>
+
+        </div>
+    </header>
+
+    <section class="banner noPadding">
+        <div class="container"><img src="./assets/images/banner-img.png" alt=""></div>
+    </section>
+
+    <section class="real ">
+        <div class="container-fluid">
+            <img src="./assets/images/real-overlay.png" class="real-overlay" alt="">
+            <div class="realAnimationDiv hr-animation-container">
+                <div class="realCard">
+                    <div class="img-wrap">
+                        <img src="./assets/images/realCard-img.png" alt="#">
+                    </div>
+                    <div class="realCardText">
+                        <h5>100% REAL BUBBLE TEA</h5>
+                        <h6>NO FILLERS, NO GUMS</h6>
+                    </div>
+
+                </div>
+                <div class="realCard">
+                    <div class="img-wrap">
+                        <img src="./assets/images/realCard-img.png" alt="#">
+                    </div>
+                    <div class="realCardText">
+                        <h5>100% REAL BUBBLE TEA</h5>
+                        <h6>NO FILLERS, NO GUMS</h6>
+                    </div>
+
+                </div>
+                <div class="realCard">
+                    <div class="img-wrap">
+                        <img src="./assets/images/realCard-img.png" alt="#">
+                    </div>
+                    <div class="realCardText">
+                        <h5>100% REAL BUBBLE TEA</h5>
+                        <h6>NO FILLERS, NO GUMS</h6>
+                    </div>
+
+                </div>
+                <div class="realCard">
+                    <div class="img-wrap">
+                        <img src="./assets/images/realCard-img.png" alt="#">
+                    </div>
+                    <div class="realCardText">
+                        <h5>100% REAL BUBBLE TEA</h5>
+                        <h6>NO FILLERS, NO GUMS</h6>
+                    </div>
+
+                </div>
+                <div class="realCard">
+                    <div class="img-wrap">
+                        <img src="./assets/images/realCard-img.png" alt="#">
+                    </div>
+                    <div class="realCardText">
+                        <h5>100% REAL BUBBLE TEA</h5>
+                        <h6>NO FILLERS, NO GUMS</h6>
+                    </div>
+
+                </div>
+                <div class="realCard">
+                    <div class="img-wrap">
+                        <img src="./assets/images/realCard-img.png" alt="#">
+                    </div>
+                    <div class="realCardText">
+                        <h5>100% REAL BUBBLE TEA</h5>
+                        <h6>NO FILLERS, NO GUMS</h6>
+                    </div>
+
+                </div>
+                <div class="realCard">
+                    <div class="img-wrap">
+                        <img src="./assets/images/realCard-img.png" alt="#">
+                    </div>
+                    <div class="realCardText">
+                        <h5>100% REAL BUBBLE TEA</h5>
+                        <h6>NO FILLERS, NO GUMS</h6>
+                    </div>
+
+                </div>
+                <div class="realCard">
+                    <div class="img-wrap">
+                        <img src="./assets/images/realCard-img.png" alt="#">
+                    </div>
+                    <div class="realCardText">
+                        <h5>100% REAL BUBBLE TEA</h5>
+                        <h6>NO FILLERS, NO GUMS</h6>
+                    </div>
+
+                </div>
+                <div class="realCard">
+                    <div class="img-wrap">
+                        <img src="./assets/images/realCard-img.png" alt="#">
+                    </div>
+                    <div class="realCardText">
+                        <h5>100% REAL BUBBLE TEA</h5>
+                        <h6>NO FILLERS, NO GUMS</h6>
+                    </div>
+
+                </div>
+                <div class="realCard">
+                    <div class="img-wrap">
+                        <img src="./assets/images/realCard-img.png" alt="#">
+                    </div>
+                    <div class="realCardText">
+                        <h5>100% REAL BUBBLE TEA</h5>
+                        <h6>NO FILLERS, NO GUMS</h6>
+                    </div>
+
+                </div>
+                <div class="realCard">
+                    <div class="img-wrap">
+                        <img src="./assets/images/realCard-img.png" alt="#">
+                    </div>
+                    <div class="realCardText">
+                        <h5>100% REAL BUBBLE TEA</h5>
+                        <h6>NO FILLERS, NO GUMS</h6>
+                    </div>
+
+                </div>
+                <div class="realCard">
+                    <div class="img-wrap">
+                        <img src="./assets/images/realCard-img.png" alt="#">
+                    </div>
+                    <div class="realCardText">
+                        <h5>100% REAL BUBBLE TEA</h5>
+                        <h6>NO FILLERS, NO GUMS</h6>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="category firstSection">
+
+        <h4>Our Exclusive <span class="heading-white">Category</span></h4>
+
+        <div class="container">
+            <div class="slider">
+                <div class="item">
+                    <div class="categoryItem">
+                        <div class="categoryBadge">
+                            <a href="#">Bubble Milk Tea</a>
+                        </div>
+                        <img src="./assets/images/category-main-item.png" alt="" class="catItemBg">
+                        <img src="./assets/images/cat-item.png" class="main" alt="#">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="categoryItem">
+                        <div class="categoryBadge">
+                            <a href="#">Bubble Milk Tea</a>
+                        </div>
+                        <img src="./assets/images/category-main-item.png" alt="" class="catItemBg">
+                        <img src="./assets/images/cat-item.png" class="main" alt="#">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="categoryItem">
+                        <div class="categoryBadge">
+                            <a href="#">Bubble Milk Tea</a>
+                        </div>
+                        <img src="./assets/images/category-main-item.png" alt="" class="catItemBg">
+                        <img src="./assets/images/cat-item.png" class="main" alt="#">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="categoryItem">
+                        <div class="categoryBadge">
+                            <a href="#">Bubble Milk Tea</a>
+                        </div>
+                        <img src="./assets/images/category-main-item.png" alt="" class="catItemBg">
+                        <img src="./assets/images/cat-item.png" class="main" alt="#">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="categoryItem">
+                        <div class="categoryBadge">
+                            <a href="#">Bubble Milk Tea</a>
+                        </div>
+                        <img src="./assets/images/category-main-item.png" alt="" class="catItemBg">
+                        <img src="./assets/images/cat-item.png" class="main" alt="#">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="categoryItem">
+                        <div class="categoryBadge">
+                            <a href="#">Bubble Milk Tea</a>
+                        </div>
+                        <img src="./assets/images/category-main-item.png" alt="" class="catItemBg">
+                        <img src="./assets/images/cat-item.png" class="main" alt="#">
+                    </div>
+                </div>
+            </div>
+
+            <div class="categoryBtn text-center">
+                <a href="#" class="btn btn-primary">More Categories</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="shop">
+        <h4>Shop Super<span class="heading-white"> - Boba</span></h4>
+        <div class="container-fluid">
+
+            <div class="shopCardContainer hr-animation-container">
+                <div class="rotate">
+                    <div class="shopCards">
+                        <img src="./assets/images/shopCardHoverImg.png" class="hoverPopUpImage">
+                        <div class="img-wrap">
+                            <img src="./assets/images/shop-2.png" alt="">
+                        </div>
+                        <h5>TARO MARSHMALLOW</h5>
+                        <div class="shopNowButton">
+                            <a href="#">Shop Now </a>
+                        </div>
+                        <button class="addButton"><img src="./assets/images/shopbuttonImage.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="rotate">
+                    <div class="shopCards">
+                        <img src="./assets/images/shopCardHoverImg.png" class="hoverPopUpImage">
+                        <div class="img-wrap">
+                            <img src="./assets/images/shop-1.png" alt="">
+                        </div>
+                        <h5>TARO MARSHMALLOW</h5>
+                        <div class="shopNowButton">
+                            <a href="#">Shop Now </a>
+                        </div>
+                        <button class="addButton"><img src="./assets/images/shopbuttonImage.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="rotate">
+                    <div class="shopCards">
+                        <img src="./assets/images/shopCardHoverImg.png" class="hoverPopUpImage">
+                        <div class="img-wrap">
+                            <img src="./assets/images/shop-1.png" alt="">
+                        </div>
+                        <h5>TARO MARSHMALLOW</h5>
+                        <div class="shopNowButton">
+                            <a href="#">Shop Now </a>
+                        </div>
+                        <button class="addButton"><img src="./assets/images/shopbuttonImage.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="rotate">
+                    <div class="shopCards">
+                        <img src="./assets/images/shopCardHoverImg.png" class="hoverPopUpImage">
+                        <div class="img-wrap">
+                            <img src="./assets/images/shop-1.png" alt="">
+                        </div>
+                        <h5>TARO MARSHMALLOW</h5>
+                        <div class="shopNowButton">
+                            <a href="#">Shop Now </a>
+                        </div>
+                        <button class="addButton"><img src="./assets/images/shopbuttonImage.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="rotate">
+                    <div class="shopCards">
+                        <img src="./assets/images/shopCardHoverImg.png" class="hoverPopUpImage">
+                        <div class="img-wrap">
+                            <img src="./assets/images/shop-1.png" alt="">
+                        </div>
+                        <h5>TARO MARSHMALLOW</h5>
+                        <div class="shopNowButton">
+                            <a href="#">Shop Now </a>
+                        </div>
+                        <button class="addButton"><img src="./assets/images/shopbuttonImage.png" alt=""></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="toppings">
+        <div class="container">
+            <div class="toppingsMain toppingSlider">
+                <div class="item">
+                    <div class=" panel">
+                        <div class="toppingsText">
+                            <h5>Our Toppings</h5>
+                            <p>At Boba Bubble, we believe that every bubble tea should be an expression of your
+                                unique taste preferences. That's why we offer an array of tantalizing toppings to
+                                enhance your bubble tea experience. From the classic chewiness of tapioca pearls to
+                                the delightful popping sensation of fruit jellies, our toppings add an extra layer
+                                of texture and flavor to your favorite drink.</p>
+                            <a href="#" class="btn btn-primary">More Toppings</a>
+                        </div>
+                        <div class="toppingsImg">
+                            <img src="./assets/images/toppings-img.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class=" panel">
+                        <div class="toppingsText">
+                            <h5>Our Toppings</h5>
+                            <p>At Boba Bubble, we believe that every bubble tea should be an expression of your
+                                unique taste preferences. That's why we offer an array of tantalizing toppings to
+                                enhance your bubble tea experience. From the classic chewiness of tapioca pearls to
+                                the delightful popping sensation of fruit jellies, our toppings add an extra layer
+                                of texture and flavor to your favorite drink.</p>
+                            <a href="#" class="btn btn-primary">More Toppings</a>
+                        </div>
+                        <div class="toppingsImg">
+                            <img src="./assets/images/toppings-img.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class=" panel">
+                        <div class="toppingsText">
+                            <h5>Our Toppings</h5>
+                            <p>At Boba Bubble, we believe that every bubble tea should be an expression of your
+                                unique taste preferences. That's why we offer an array of tantalizing toppings to
+                                enhance your bubble tea experience. From the classic chewiness of tapioca pearls to
+                                the delightful popping sensation of fruit jellies, our toppings add an extra layer
+                                of texture and flavor to your favorite drink.</p>
+                            <a href="#" class="btn btn-primary">More Toppings</a>
+                        </div>
+                        <div class="toppingsImg">
+                            <img src="./assets/images/toppings-img.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cravings">
+        <div class="container">
+            <div class="cravingsMain">
+                <div class="panel">
+                    <div class="cravingsText">
+                        <h5>Satisfy Your Cravings with Irresistible Bubble Tea</h5>
+                        <p>Quench Your Thirst, Elevate Your Mood, and Indulge in the Ultimate Bubble Tea Experience</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                    <div class="cravingsImg">
+                        <img src="./assets/images/cravings-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="process">
+        <h4>Our <span class="heading-white">Process</span></h4>
+        <div class="container">
+            <div class="panel">
+                <div class="processCards">
+                    <div class="img-wrap">
+                        <img src="./assets/images/process-1.png" alt="">
+                    </div>
+                    <h5>Order</h5>
+                </div>
+                <div class="processCards">
+                    <div class="img-wrap">
+                        <img src="./assets/images/process-2.png" alt="">
+                    </div>
+                    <h5>Preparing </h5>
+                </div>
+                <div class="processCards">
+                    <div class="img-wrap">
+                        <img src="./assets/images/process-3.png" alt="">
+                    </div>
+                    <h5>Delivery</h5>
+                </div>
+                <div class="processCards">
+                    <div class="img-wrap">
+                        <img src="./assets/images/process-4.png" alt="">
+                    </div>
+                    <h5>Received </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h4>Our <span class="heading-white">Gallery</span></h4>
+        <div class="container">
+            <div class="galleryGrid">
+                <div class="img-wrap">
+                    <img src="./assets/images/gallery-1.png" alt="">
+                </div>
+                <div class="img-wrap">
+                    <img src="./assets/images/gallery-2.png" alt="">
+                </div>
+                <div class="img-wrap">
+                    <img src="./assets/images/gallery-3.png" alt="">
+                </div>
+                <div class="img-wrap">
+                    <img src="./assets/images/gallery-4.png" alt="">
+                </div>
+                <div class="img-wrap">
+                    <img src="./assets/images/gallery-5.png" alt="">
+                </div>
+                <div class="img-wrap">
+                    <img src="./assets/images/gallery-6.png" alt="">
+                </div>
+                <div class="img-wrap">
+                    <img src="./assets/images/gallery-7.png" alt="">
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <h4>What They Say <span class="heading-white">About Us</span></h4>
+        <img src="./assets/images/about-top.png" class="about-overlay" alt="">
+        <div class="container-fluid">
+
+            <div class="aboutAnimationContainer hr-animation-container">
+                <div class="aboutcards">
+                    <div class="img-wrap">
+                        <img src="./assets/images/about-person-img.png" alt="">
+                    </div>
+                    <div class="aboutCardText">
+                        <img src="./assets/images/star-img.png" alt="">
+                        <p>"Absolutely love the bubble teas at Boba Bubble! The flavors are incredible, and the tapioca
+                            pearls are always perfectly cooked and chewy. It's my go-to spot for a refreshing and
+                            satisfying treat."</p>
+                        <h6>Jennifer S.</h6>
+                    </div>
+                </div>
+
+                <div class="aboutcards">
+                    <div class="img-wrap">
+                        <img src="./assets/images/about-person-img.png" alt="">
+                    </div>
+                    <div class="aboutCardText">
+                        <img src="./assets/images/star-img.png" alt="">
+                        <p>"Absolutely love the bubble teas at Boba Bubble! The flavors are incredible, and the tapioca
+                            pearls are always perfectly cooked and chewy. It's my go-to spot for a refreshing and
+                            satisfying treat."</p>
+                        <h6>Jennifer S.</h6>
+                    </div>
+                </div>
+
+                <div class="aboutcards">
+                    <div class="img-wrap">
+                        <img src="./assets/images/about-person-img.png" alt="">
+                    </div>
+                    <div class="aboutCardText">
+                        <img src="./assets/images/star-img.png" alt="">
+                        <p>"Absolutely love the bubble teas at Boba Bubble! The flavors are incredible, and the tapioca
+                            pearls are always perfectly cooked and chewy. It's my go-to spot for a refreshing and
+                            satisfying treat."</p>
+                        <h6>Jennifer S.</h6>
+                    </div>
+                </div>
+
+                <div class="aboutcards">
+                    <div class="img-wrap">
+                        <img src="./assets/images/about-person-img.png" alt="">
+                    </div>
+                    <div class="aboutCardText">
+                        <img src="./assets/images/star-img.png" alt="">
+                        <p>"Absolutely love the bubble teas at Boba Bubble! The flavors are incredible, and the tapioca
+                            pearls are always perfectly cooked and chewy. It's my go-to spot for a refreshing and
+                            satisfying treat."</p>
+                        <h6>Jennifer S.</h6>
+                    </div>
+                </div>
+
+                <div class="aboutcards">
+                    <div class="img-wrap">
+                        <img src="./assets/images/about-person-img.png" alt="">
+                    </div>
+                    <div class="aboutCardText">
+                        <img src="./assets/images/star-img.png" alt="">
+                        <p>"Absolutely love the bubble teas at Boba Bubble! The flavors are incredible, and the tapioca
+                            pearls are always perfectly cooked and chewy. It's my go-to spot for a refreshing and
+                            satisfying treat."</p>
+                        <h6>Jennifer S.</h6>
+                    </div>
+                </div>
+
+                <div class="aboutcards">
+                    <div class="img-wrap">
+                        <img src="./assets/images/about-person-img.png" alt="">
+                    </div>
+                    <div class="aboutCardText">
+                        <img src="./assets/images/star-img.png" alt="">
+                        <p>"Absolutely love the bubble teas at Boba Bubble! The flavors are incredible, and the tapioca
+                            pearls are always perfectly cooked and chewy. It's my go-to spot for a refreshing and
+                            satisfying treat."</p>
+                        <h6>Jennifer S.</h6>
+                    </div>
+                </div>
+
+                <div class="aboutcards">
+                    <div class="img-wrap">
+                        <img src="./assets/images/about-person-img.png" alt="">
+                    </div>
+                    <div class="aboutCardText">
+                        <img src="./assets/images/star-img.png" alt="">
+                        <p>"Absolutely love the bubble teas at Boba Bubble! The flavors are incredible, and the tapioca
+                            pearls are always perfectly cooked and chewy. It's my go-to spot for a refreshing and
+                            satisfying treat."</p>
+                        <h6>Jennifer S.</h6>
+                    </div>
+                </div>
+
+                <div class="aboutcards">
+                    <div class="img-wrap">
+                        <img src="./assets/images/about-person-img.png" alt="">
+                    </div>
+                    <div class="aboutCardText">
+                        <img src="./assets/images/star-img.png" alt="">
+                        <p>"Absolutely love the bubble teas at Boba Bubble! The flavors are incredible, and the tapioca
+                            pearls are always perfectly cooked and chewy. It's my go-to spot for a refreshing and
+                            satisfying treat."</p>
+                        <h6>Jennifer S.</h6>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="aboutAnimationContainer hr-animation-container">
+                <div class="aboutcards">
+                    <div class="img-wrap">
+                        <img src="./assets/images/about-person-img.png" alt="">
+                    </div>
+                    <div class="aboutCardText">
+                        <img src="./assets/images/star-img.png" alt="">
+                        <p>"Absolutely love the bubble teas at Boba Bubble! The flavors are incredible, and the tapioca
+                            pearls are always perfectly cooked and chewy. It's my go-to spot for a refreshing and
+                            satisfying treat."</p>
+                        <h6>Jennifer S.</h6>
+                    </div>
+                </div>
+
+                <div class="aboutcards">
+                    <div class="img-wrap">
+                        <img src="./assets/images/about-person-img.png" alt="">
+                    </div>
+                    <div class="aboutCardText">
+                        <img src="./assets/images/star-img.png" alt="">
+                        <p>"Absolutely love the bubble teas at Boba Bubble! The flavors are incredible, and the tapioca
+                            pearls are always perfectly cooked and chewy. It's my go-to spot for a refreshing and
+                            satisfying treat."</p>
+                        <h6>Jennifer S.</h6>
+                    </div>
+                </div>
+
+                <div class="aboutcards">
+                    <div class="img-wrap">
+                        <img src="./assets/images/about-person-img.png" alt="">
+                    </div>
+                    <div class="aboutCardText">
+                        <img src="./assets/images/star-img.png" alt="">
+                        <p>"Absolutely love the bubble teas at Boba Bubble! The flavors are incredible, and the tapioca
+                            pearls are always perfectly cooked and chewy. It's my go-to spot for a refreshing and
+                            satisfying treat."</p>
+                        <h6>Jennifer S.</h6>
+                    </div>
+                </div>
+
+                <div class="aboutcards">
+                    <div class="img-wrap">
+                        <img src="./assets/images/about-person-img.png" alt="">
+                    </div>
+                    <div class="aboutCardText">
+                        <img src="./assets/images/star-img.png" alt="">
+                        <p>"Absolutely love the bubble teas at Boba Bubble! The flavors are incredible, and the tapioca
+                            pearls are always perfectly cooked and chewy. It's my go-to spot for a refreshing and
+                            satisfying treat."</p>
+                        <h6>Jennifer S.</h6>
+                    </div>
+                </div>
+
+                <div class="aboutcards">
+                    <div class="img-wrap">
+                        <img src="./assets/images/about-person-img.png" alt="">
+                    </div>
+                    <div class="aboutCardText">
+                        <img src="./assets/images/star-img.png" alt="">
+                        <p>"Absolutely love the bubble teas at Boba Bubble! The flavors are incredible, and the tapioca
+                            pearls are always perfectly cooked and chewy. It's my go-to spot for a refreshing and
+                            satisfying treat."</p>
+                        <h6>Jennifer S.</h6>
+                    </div>
+                </div>
+
+                <div class="aboutcards">
+                    <div class="img-wrap">
+                        <img src="./assets/images/about-person-img.png" alt="">
+                    </div>
+                    <div class="aboutCardText">
+                        <img src="./assets/images/star-img.png" alt="">
+                        <p>"Absolutely love the bubble teas at Boba Bubble! The flavors are incredible, and the tapioca
+                            pearls are always perfectly cooked and chewy. It's my go-to spot for a refreshing and
+                            satisfying treat."</p>
+                        <h6>Jennifer S.</h6>
+                    </div>
+                </div>
+
+                <div class="aboutcards">
+                    <div class="img-wrap">
+                        <img src="./assets/images/about-person-img.png" alt="">
+                    </div>
+                    <div class="aboutCardText">
+                        <img src="./assets/images/star-img.png" alt="">
+                        <p>"Absolutely love the bubble teas at Boba Bubble! The flavors are incredible, and the tapioca
+                            pearls are always perfectly cooked and chewy. It's my go-to spot for a refreshing and
+                            satisfying treat."</p>
+                        <h6>Jennifer S.</h6>
+                    </div>
+                </div>
+
+                <div class="aboutcards">
+                    <div class="img-wrap">
+                        <img src="./assets/images/about-person-img.png" alt="">
+                    </div>
+                    <div class="aboutCardText">
+                        <img src="./assets/images/star-img.png" alt="">
+                        <p>"Absolutely love the bubble teas at Boba Bubble! The flavors are incredible, and the tapioca
+                            pearls are always perfectly cooked and chewy. It's my go-to spot for a refreshing and
+                            satisfying treat."</p>
+                        <h6>Jennifer S.</h6>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <img src="./assets/images/about-bototm.png" class="about-overlay" alt="">
+    </section>
+
+    <footer>
+        <div class="container">
+
+            <div class="topFooter panel">
+                <div class="ftAbout">
+                    <div class="ftLogo">
+                        <img src="./assets/images/logo.png" alt="">
+                    </div>
+                    <p>Boba Bubble: Crafting perfection in every cup of bubble tea, with high-quality ingredients,
+                        delightful flavors, and a passion for delivering the ultimate experience. Join us and indulge in
+                        pure delight.</p>
+
+                    <div class="ftTimings">
+                        <p><strong>Operating Hours: </strong> 12pm to 12am</p>
+                        <p><strong>Delivery Time: </strong> 12pm to 12am</p>
+                        <div class="follow">
+                            <strong>Follow Us:</strong>
+                            <div class="socialIcons">
+                                <img src="./assets/images/fb-icon.png" alt="">
+                                <img src="./assets/images/insta-icon.png" alt="">
+                                <img src="./assets/images/linkedin-con.png" alt="">
+                                <img src="./assets/images/twitter-icon.png" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="ftLinks">
+                    <div class="panel">
+                        <div class="footerLinks">
+                            <h5>Shop</h5>
+                            <ul>
+                                <li><a href="#">Boba Bubble Tea</a></li>
+                                <li><a href="#">Shop All</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Our Menu</a></li>
+                            </ul>
+                        </div>
+                        <div class="footerLinks">
+                            <h5>Support</h5>
+                            <ul>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footerLinks">
+                            <h5>Partner With Us</h5>
+                            <ul>
+                                <li><a href="#">Join Our Team</a></li>
+                                <li><a href="#">Wholesale Opportunities</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="newsletter">
+                        <h5>Subscribe Our Newsletter For Amazing Deals</h5>
+                        <div class="newsInput">
+                            <input type="email" placeholder="Enter Your Email Address">
+                            <button href="#" class="">Subscribe</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="ftAddress">
+                <div class="panel">
+                    <div class="address">
+                        <h5>Head Office</h5>
+                        <p>120 A, Sky comfort, Sindhi Muslim Cooperative Housing Society Block A Sindhi Muslim CHS
+                            (SMCHS), Karachi, Karachi City, Sindh</p>
+                    </div>
+                    <div class="address">
+                        <h5>DHA- Branch</h5>
+                        <p>120 A, Sky comfort, Sindhi Muslim Cooperative Housing Society Block A Sindhi Muslim CHS
+                            (SMCHS), Karachi, Karachi City, Sindh</p>
+                    </div>
+                    <div class="address">
+                        <h5>SMCHS Branch</h5>
+                        <p>120 A, Sky comfort, Sindhi Muslim Cooperative Housing Society Block A Sindhi Muslim CHS
+                            (SMCHS), Karachi, Karachi City, Sindh</p>
+                    </div>
+
+                    <div class="address">
+                        <h5>Lucky One Branch: <span>(Coming Soon)</span></h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ft-pictures">
+                <div class="panel">
+                    <img src="./assets/images/ft-img-1.png" alt="">
+                    <img src="./assets/images/ft-img-2.png" alt="">
+                    <img src="./assets/images/ft-img-3.png" alt="">
+                    <img src="./assets/images/ft-img-4.png" alt="">
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="bottomFooter">
+            <p>Copyright 2022 Boba Bubble Tea. All Rights Reserved. Powered By Array Digitals</p>
+        </div>
+    </footer>
 
 
 
@@ -32,6 +867,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+    <!-- slick js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- ion icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <script src="./assets/js/script.js"></script>
 </body>
