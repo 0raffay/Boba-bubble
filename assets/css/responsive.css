@@ -3,6 +3,7 @@
     section>h4 {
         font-size: 64px;
         position: relative;
+        line-height: 100%;
         z-index: 2;
     }
 
@@ -16,9 +17,13 @@
 
     }
 
-    .category .categoryItem img.catItemBg {
-        scale: 1;
+    .category .categoryItem img.main {
+        scale: 0.8;
     }
+
+    /* .category .slick-slide.slick-center .categoryItem img.catItemBg {
+        scale: 1;
+    } */
 
     .toppingsMain {
         text-align: center;
@@ -110,11 +115,11 @@
     .real {
         padding: 30px 0 !important;
     }
-    
+
     .heading-white {
         padding: 0;
     }
-    
+
     section>h4 {
         margin-bottom: 40px;
         font-size: 40px;
@@ -133,7 +138,7 @@
         transform: scale(1.2);
     }
 
-    .category .categoryItem img.catItemBg {
+    .category .slick-slide.slick-center .categoryItem img.catItemBg {
         scale: 1.4;
     }
 
@@ -148,19 +153,142 @@
         line-height: 100%;
     }
 
-    .galleryGrid{
+    .galleryGrid {
         grid-template-columns: auto auto auto;
     }
 
     .mobile-nav {
         width: 80%;
+        z-index: 1000;
+    }
+
+    .banner .container img {
+        height: 70vh;
+    }
+
+    .realCard h5 {
+        font-size: 16px;
+        line-height: 100%;
+    }
+
+    .realCard h6 {
+
+        line-height: 100%;
+        font-size: 16px;
+    }
+
+    .realCard {
+        align-items: center;
+    }
+
+
+    .cravingsMain .panel {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
+
+    .cravingsImg {
+        max-width: 50%;
+        height: auto;
+    }
+
+    footer{
+        padding: 50px 0;
     }
 
 }
 
-@media only screen and (max-width: 480px){
-    .newsInput input{
+@media only screen and (max-width: 480px) {
+    .newsInput input {
         padding: 22px 0 21px 20px;
         font-size: 14px;
     }
-} 
+
+    .category .slick-slide.slick-center img.main {
+        transform: scale(1.06);
+    }
+
+    .category .slick-slide.slick-center .categoryItem img.catItemBg {
+        scale: 1.1;
+    }
+
+    .real {
+        padding: 20px 0;
+    }
+
+
+    section>h4 {
+        font-size: 25px;
+    }
+
+    .category .slider {
+        margin-bottom: 0;
+    }
+
+    .shopCards {
+        padding: 25px 25px 28px;
+    }
+
+    .shopCards h5 {
+        font-size: 16px;
+    }
+
+    .shopCards .img-wrap {
+        scale: 0.8;
+    }
+
+    .shopNowButton {
+        scale: 0.8;
+        left: -8%;
+    }
+
+    .addButton {
+        scale: 0.8;
+    }
+
+    .toppingsText p {
+        font-size: 16px;
+        line-height: 17px;
+        padding: 0 15px;
+    }
+
+    .slick-slide img {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    .cravingsImg {
+        position: relative;
+        left: 20px;
+    }
+
+    .cravingsText h5 {
+        margin-bottom: 20px;
+    }
+
+    .cravingsText p{
+        margin-bottom: 15px;
+    }
+
+    .processCards .img-wrap{
+        max-width: 50%;
+        margin: 20px auto;
+    }
+
+    .processCards h5{
+        font-size: 20px;
+    }
+
+    .cravings {
+        padding: 20px 0;
+    }
+
+
+
+}
