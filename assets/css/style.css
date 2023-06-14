@@ -320,6 +320,7 @@ header .container {
 .openMenuPhone ion-icon {
     position: relative;
     top: 4px;
+    display: inline-block;
 }
 
 
@@ -354,7 +355,7 @@ header .container {
 
     .mobile-nav {
         /* display: block; */
-        position: absolute;
+        position: fixed;
         z-index: 21;
         top: 0;
         width: 100%;
