@@ -13,7 +13,7 @@
 
 <body>
 
-<?php include('includes/header-inc.php') ?>
+    <?php include('includes/header-inc.php') ?>
 
 
 
@@ -26,23 +26,53 @@
             </div>
         </div>
 
+        <div class="gallaryPageGallery">
+            <div class="container text-center">
+                <div class="galleryPageGrid">
+                    <div class="img-wrap col-span-2 row-span-2">
+                        <img src="./assets/images/gridMain-1.png " alt="">
+                    </div>
+                    <div class="img-wrap">
+                        <img src="./assets/images/gridMain-2.png" alt="">
+                    </div>
+                    <div class="img-wrap">
+                        <img src="./assets/images/gridMain-3.png" alt="">
+                    </div>
+                    <div class="img-wrap">
+                        <img src="./assets/images/gridMain-4.png" alt="">
+                    </div>
+                    <div class="img-wrap">
+                        <img src="./assets/images/gridMain-5.png" alt="">
+                    </div>
+                    <div class="img-wrap">
+                        <img src="./assets/images/gridMain-6.png" alt="">
+                    </div>
+                    <div class="img-wrap">
+                        <img src="./assets/images/gridMain-7.png" alt="">
+                    </div>
+                    <div class="img-wrap row-span-2 col-span-2">
+                        <img src="./assets/images/gridMain-8.png" alt="">
+                    </div>
+                    <div class="img-wrap">
+                        <img src="./assets/images/gridMain-9.png" alt="">
+                    </div>
+                    <div class="img-wrap">
+                        <img src="./assets/images/gridMain-10.png" alt="">
+                    </div>
 
-        <div class="galleryGrid">
-            <img src="./assets/images/gridMain-1.png" alt="">
-            <img src="./assets/images/gridMain-2.png" alt="">
-            <img src="./assets/images/gridMain-3.png" alt="">
-            <img src="./assets/images/gridMain-4.png" alt="">
-            <img src="./assets/images/gridMain-5.png" alt="">
-            <img src="./assets/images/gridMain-6.png" alt="">
-            <img src="./assets/images/gridMain-7.png" alt="">
-            <img src="./assets/images/gridMain-8.png" alt="">
-            <img src="./assets/images/gridMain-9.png" alt="">
-            <img src="./assets/images/gridMain-10.png" alt="">
+                </div>
+
+                <a href="#" class="btn btn-primary">Load More....</a>
+            </div>
         </div>
+
 
     </section>
 
-    
+
+
+
+
     <?php include('includes/cravings-section.php') ?>
     <?php include('includes/process-section.php') ?>
     <?php include('includes/about-us-section.php') ?>

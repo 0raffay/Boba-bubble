@@ -68,6 +68,10 @@ ul {
   justify-content: space-between;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .btn {
   padding: 15px 33px 16.91px;
   background: #E64699;
@@ -498,7 +502,7 @@ header .container {
 }
 
 .animateUpdown {
-  animation: upDownAnimation 2s linear infinite;
+  animation: upDownAnimation 1.5s linear infinite;
 }
 
 .animateUpdown:hover {
@@ -1293,7 +1297,7 @@ footer .container {
 /* about start */
 
 /* about banner */
-.innerPageContainer{
+.innerPageContainer {
   max-width: 1497px;
   margin: 0 0 0 auto;
 }
@@ -1676,7 +1680,7 @@ section.ourMenu > h4 {
 }
 
 /* .menuTabsPanels .shopCards:hover h5{ */
-  /* top: 29px; */
+/* top: 29px; */
 /* } */
 
 .menuTabsPanels .hoverPopUpImage {
@@ -1698,8 +1702,7 @@ section.ourMenu > h4 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 0 auto;
-  margin-bottom: 100px;
+  margin: 0 auto 100px;
 }
 
 .tabs {
@@ -1714,46 +1717,331 @@ section.ourMenu > h4 {
 
 /* our flavors */
 
-.innerMenuSection .container{
+.innerMenuSection .container {
   max-width: 1300px;
   padding: 0;
-  
+
 }
 
-.itemsGrid{
+.itemsGrid {
   display: grid;
   column-gap: 25px;
   grid-template-columns: repeat(4,auto);
   grid-template-rows: repeat(2, 450PX);
 }
 
-.menuTabsPanels{
+.menuTabsPanels {
   text-align: center;
 }
 
 /* flavors */
 
-.ourFlavors .shopCards{
+.ourToppings .shopCards {
   height: 333px;
   padding: 33px 22px 42px 21px;
 }
 
-.ourFlavors .shopCards .img-wrap{
+.ourToppings .shopCards .img-wrap {
   margin-bottom: 20px;
 }
 
-.ourFlavors .shopCards .img-wrap img{
+.ourToppings .shopCards .img-wrap img {
   width: 100%;
   max-width: 267px;
   min-height: 205px;
 }
 
-.ourFlavors .itemsGrid{
+.ourToppings .itemsGrid {
   gap: 25px;
   grid-template-rows: auto;
   margin-bottom: 90px;
 }
 
-
 /* about Page */
 
+.galleryBanner .innerPageContainer .img-wrap {
+  margin-bottom: 150px;
+}
+
+.gallaryPageGallery .container {
+  max-width: 1427px;
+}
+
+.galleryPageGrid {
+  display: grid;
+  grid-template-columns: repeat(4 , 340px);
+  grid-template-rows: repeat(4, 270px);
+  gap: 30px;
+  grid-auto-flow: dense;
+  margin-bottom: 90px;
+}
+
+.galleryPageGrid img {
+  width: 100%;
+  height: 100%;
+}
+
+.row-span-2 {
+  grid-row: span 2;
+}
+
+.col-span-2 {
+  grid-column: span 2;
+}
+
+/* reviews page */
+
+.reviews .container {
+  max-width: 1265px;
+}
+
+.reviewForm {
+  padding: 79px 177px 204px 124px;
+  max-width: 1256px;
+  width: 100%;
+
+  background: #EFEEEE;
+  border-radius: 10px;
+}
+
+.reviewForm h4 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 110%;
+  /* identical to box height, or 66px */
+
+  text-align: center;
+
+  color: #000000;
+  margin-bottom: 115px;
+
+}
+
+.reviewForm h4 span {
+  color: #fff;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+}
+
+.formGrid > div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  align-items: flex-start;
+}
+
+.formGrid label {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 110%;
+  /* or 24px */
+
+  text-align: center;
+
+  color: #000000;
+  margin-bottom: 20px;
+
+}
+
+.formGrid input {
+  width: 100%;
+  max-width: 467px;
+  /* min-height: 70px; */
+  padding: 20px;
+  background: #F3F3F3;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+
+}
+
+.formGrid textarea {
+  min-height: 226px;
+  width: 100%;
+  background: #F3F3F3;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  grid-column: span 2;
+}
+
+.rating-stars ion-icon {
+  background: #F3F3F3;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 1px;
+
+}
+
+/* location */
+
+.locationBanner .container {
+  max-width: 1256px;
+  margin: 0 auto;
+}
+
+.addressCards {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  width: 100%;
+  max-width: 396px;
+  position: relative;
+  padding: 47px 13px 16px;
+  min-height: 194px;
+}
+
+.addressCards > img {
+  position: absolute;
+  left: 0;
+  top: -20px;
+}
+
+.addressCards h6 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.addressCards p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.8);
+
+}
+
+.locationBanner h1 {
+  margin-bottom: 154px;
+}
+
+.maps iframe {
+  max-width: 100%;
+  width: 100%;
+  min-height: 726px;
+  display: none;
+}
+
+.maps iframe p {
+  text-align: center;
+}
+
+.col-span-2 input {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* cateringp page */
+
+.cateringBanner {
+  padding-top: 70px;
+}
+
+.noPlaceholder::-webkit-input-placeholder {
+  visibility: hidden;
+}
+
+.cateringBanner .img-wrap {
+  margin-bottom: 50px;
+}
+
+.faqText,
+.cateringText {
+  max-width: 661px;
+  width: 100%;
+
+}
+
+.cateringBanner .panel {
+  max-width: 1360px;
+  width: 100%;
+}
+
+.cateringText h1,
+.faqText h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 130%;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.cateringText p,
+.faqText p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  /* or 26px */
+
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.faqText + .img-wrap,
+.cateringText + .img-wrap {
+  position: relative;
+  bottom: 200px;
+  margin: 0;
+}
+
+.padding-0 {
+  padding: 0 !important;
+}
+
+/* faqs */
+.faqsBody{
+  background-color: #FAF7F2;
+}
+
+.acc-container:nth-of-type(1) {
+  border-top: none;
+}
+
+.acc-container {
+  padding: 43px 0 22px;
+  /* border-top: 1px solid #353535; */
+  border-bottom:2px solid #000000;
+}
+
+.acc-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.acc-head h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 110%;
+  /* identical to box height, or 33px */
+
+  /* text-align: center; */
+
+  color: #000000;
+  margin-bottom: 15px;
+
+}
+
+.panels p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 110%;
+  /* or 24px */
+
+  color: #000000;
+
+}
+
+.icon-up {
+  display: none;
+}

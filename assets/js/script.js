@@ -3,6 +3,8 @@ $(document).ready(function () {
     navBar()
     menuOpen()
     menuTabs()
+    maps()
+    accordion()
 })
 
 
@@ -74,21 +76,21 @@ function navBar() {
     })
 }
 
-function menuOpen(){
+function menuOpen() {
     const menuBtn = $('.openMenu')
     const menuList = $('.menuList')
     const arrowUp = $('.arr-up')
     const arrowDown = $('.arr-down')
     let isOpen = false;
 
-    menuBtn.click(function(){
-        if(isOpen){
+    menuBtn.click(function () {
+        if (isOpen) {
             menuList.slideUp()
             arrowUp.hide()
             arrowDown.show()
             isOpen = false;
         }
-        else{
+        else {
             menuList.slideDown()
             arrowUp.show()
             arrowDown.hide()
@@ -96,7 +98,6 @@ function menuOpen(){
         }
     })
 }
-
 
 function menuTabs() {
     const tabSwitch = $('.tabSwitchButton');
@@ -121,7 +122,49 @@ function menuTabs() {
     tabs.eq(activeIndex).show();
 }
 
+function maps() {
+    const mapButtons = $('.addressCards');
+    const maps = $('.maps iframe');
 
+    mapButtons.each(function (index) {
+        $(this).click(function () {
+
+            var thisButton = index;
+            var thisMap = maps.eq(thisButton);
+
+            maps.hide();
+            thisMap.show();
+        });
+    });
+
+    // Show the initially active tab
+    first = maps.eq(0);
+    first.show()
+}
+
+function accordion() {
+    const allPanels = $('.acc-container .panels').hide();
+    const allhead = $('.acc-container .acc-head')
+    $('.acc-container:nth-of-type(1) .panels').show();
+
+    $('.acc-container > .acc-head').click(function () {
+        if ($(this).hasClass("active")) {
+            return true;
+        }
+        else {
+            allPanels.slideUp();
+            $(this).next().slideDown();
+            allhead.removeClass('active');
+            $('.icon-up').css('display', 'none');
+            $('.icon-down').css('display', 'block');
+            $(this).addClass('active');
+            $(this).find('.icon-up').css('display', 'block');
+            $(this).find('.icon-down').css('display', 'none');
+            return false;
+        }
+    });
+
+}
 
 
 

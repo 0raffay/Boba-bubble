@@ -19,7 +19,7 @@
 
     <section class="aboutBanner">
         <div class="container innerPageContainer">
-            <h1 class="innerPageHeading">Our story</h1>
+            <h1 class="innerPageHeading ">Our story</h1>
             <div class="img-wrap mainAboutimg">
                 <img src="./assets/images/aboutBannerImg.png" alt="">
             </div>
@@ -62,6 +62,8 @@
                 </div>
             </div>
 
+        
+        
         </div>
     </section>
 

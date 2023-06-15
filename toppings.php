@@ -24,7 +24,7 @@
     <?php include('includes/real-section.php') ?>
 
 
-    <section class="ourFlavors innerMenuSection">
+    <section class="ourToppings innerMenuSection">
         <h4>Our <span class="heading-white">Flavors</span></h4>
         <div class="container menuTabsPanels">
             <div class="itemsGrid">

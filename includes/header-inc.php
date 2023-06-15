@@ -15,10 +15,10 @@
                         </ul>
                     </li>
                     <li><a href="gallery.php">Gallery</a></li>
-                    <li><a href="#">Reviews</a></li>
-                    <li><a href="#">Locations</a></li>
-                    <li><a href="#">Catering</a></li>
-                    <li><a href="#">FAQs</a></li>
+                    <li><a href="reviews.php">Reviews</a></li>
+                    <li><a href="location.php">Locations</a></li>
+                    <li><a href="catering.php">Catering</a></li>
+                    <li><a href="faq.php">FAQs</a></li>
                     <li><a href="#">Certifications</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
