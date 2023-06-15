@@ -8,13 +8,13 @@
             <nav>
                 <ul class="navList">
                     <li><a href="about-us.php" class="active">About Us</a></li>
-                    <li class="openMenu">Our Menu <ion-icon name="chevron-up-outline" class="arr-up" ></ion-icon> <ion-icon name="chevron-down-outline" class="arr-down" ></ion-icon></i>
+                    <li class="openMenu"><a href="menu.php">Our Menu</a> <ion-icon name="chevron-up-outline" class="arr-up" ></ion-icon> <ion-icon name="chevron-down-outline" class="arr-down" ></ion-icon></i>
                         <ul class="menuList">
-                            <li><a href="#"><img src="./assets/images/menuItemImg1.png" alt="">Our Flavors</a></li>
-                            <li><a href="#"><img src="./assets/images/menuItemImg2.png" alt="">Our Toppings</a></li>
+                            <li><a href="flavors.php"><img src="./assets/images/menuItemImg1.png" alt="">Our Flavors</a></li>
+                            <li><a href="toppings.php"><img src="./assets/images/menuItemImg2.png" alt="">Our Toppings</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Gallery</a></li>
+                    <li><a href="gallery.php">Gallery</a></li>
                     <li><a href="#">Reviews</a></li>
                     <li><a href="#">Locations</a></li>
                     <li><a href="#">Catering</a></li>

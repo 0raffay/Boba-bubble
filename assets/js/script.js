@@ -2,6 +2,7 @@ $(document).ready(function () {
     sliders()
     navBar()
     menuOpen()
+    menuTabs()
 })
 
 
@@ -33,6 +34,17 @@ function sliders() {
         autoplay: false,
         arrows: false,
         dots: true,
+    })
+
+    $('.bannerSlider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        // arrows: true,
+        prevArrow: $('.slick-arrows .slick-prev'),
+        nextArrow: $('.slick-arrows .slick-next'),
+        dots: false,
+        // fade: true,
     })
 }
 
@@ -84,3 +96,50 @@ function menuOpen(){
         }
     })
 }
+
+
+function menuTabs() {
+    const tabSwitch = $('.tabSwitchButton');
+    const tabs = $('.menuTabsPanels .tabs');
+
+    tabSwitch.each(function (index) {
+        $(this).click(function () {
+            tabSwitch.removeClass('active');
+            $(this).addClass('active');
+
+            var thisButton = index;
+            var thisTab = tabs.eq(thisButton);
+
+            tabs.hide();
+            thisTab.show();
+        });
+    });
+
+    // Show the initially active tab
+    var activeButton = $('.tabSwitchButton.active');
+    var activeIndex = tabSwitch.index(activeButton);
+    tabs.eq(activeIndex).show();
+}
+
+
+
+
+
+
+// buttons.each(function(index) {
+//     $(this).click(function() {
+//       buttons.removeClass('active');
+//       $(this).addClass('active');
+
+//       var thisButtonIndex = index;
+//       var thisTabsText = tabsText.eq(thisButtonIndex);
+
+//       // tabsText.css('display', 'none');
+//       tabsText.hide()
+//       thisTabsText.show()
+//       // thisTabsText.css('display', 'block');
+
+//       // console.log(thisButtonIndex);
+//       // console.log(thisTabsText);
+//     });
+//   });
