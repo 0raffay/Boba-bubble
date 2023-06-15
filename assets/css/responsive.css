@@ -1,5 +1,26 @@
 @media only screen and (max-width: 992px) {
 
+    .aboutText{
+        text-align: center;
+    }
+
+    .aboutBanner .panel .img-wrap{
+        margin: 20px auto; 
+    }
+
+    .aboutBanner .mainAboutimg.img-wrap{
+        margin:  0 0 20px;
+    }
+
+    .aboutBanner h1{
+        font-size: 50px;
+    }
+
+    .historyText{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
     section>h4 {
         font-size: 64px;
         position: relative;
@@ -23,7 +44,7 @@
 
     .category .slick-slide.slick-center img.catItemBg {
         animation: fadeInlaptops 2s;
-        scale: 0.7;
+        scale: 1.5;
     }
 
     .toppingsMain {
@@ -209,6 +230,12 @@
 }
 
 @media only screen and (max-width: 480px) {
+
+    
+.low-opacity::before,
+.low-opacity::after{
+    display: none;
+}
     .newsInput input {
         padding: 22px 0 21px 20px;
         font-size: 14px;
@@ -220,7 +247,7 @@
 
     .category .slick-slide.slick-center img.catItemBg {
         animation: fadeInPhone 2s;
-        scale: 1.1;
+        scale: 1;
     }
 
     .real {
@@ -230,6 +257,10 @@
 
     section>h4 {
         font-size: 25px;
+        margin-bottom: 20px;
+    }
+    section.history > h4{
+        margin-bottom: 40px;
     }
 
     .category .slider {
@@ -294,6 +325,32 @@
         padding: 20px 0;
     }
 
+    .category .categoryItem img.main{
+        width: 63%;
+    }
 
+    .category .slick-slide.slick-center img.main{
+        width: 76%;
+    }
 
+}
+
+@media only screen and (max-width: 400px){
+    
+    section{
+        padding: 30px 0 !important;
+    }
+
+@keyframes fadeInPhone {
+    0% {
+        scale: 0;
+    }
+
+    100% {
+        scale: 1.1;
+    }
+}
+    .category .slick-slide.slick-center img.catItemBg {
+        scale: 1.1;
+    }
 }
