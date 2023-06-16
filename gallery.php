@@ -30,34 +30,34 @@
             <div class="container text-center">
                 <div class="galleryPageGrid">
                     <div class="img-wrap col-span-2 row-span-2">
-                        <img src="./assets/images/gridMain-1.png " alt="">
+                        <a href="./assets/images/gridMain-1.png " data-fancybox="gallery" ><img src="./assets/images/gridMain-1.png " alt=""></a>
                     </div>
                     <div class="img-wrap">
-                        <img src="./assets/images/gridMain-2.png" alt="">
+                    <a href="./assets/images/gridMain-2.png " data-fancybox="gallery" ><img src="./assets/images/gridMain-2.png " alt=""></a>
                     </div>
                     <div class="img-wrap">
-                        <img src="./assets/images/gridMain-3.png" alt="">
+                    <a href="./assets/images/gridMain-3.png " data-fancybox="gallery" ><img src="./assets/images/gridMain-3.png " alt=""></a>
                     </div>
                     <div class="img-wrap">
-                        <img src="./assets/images/gridMain-4.png" alt="">
+                    <a href="./assets/images/gridMain-4.png " data-fancybox="gallery" ><img src="./assets/images/gridMain-4.png " alt=""></a>
                     </div>
                     <div class="img-wrap">
-                        <img src="./assets/images/gridMain-5.png" alt="">
+                    <a href="./assets/images/gridMain-5.png " data-fancybox="gallery" ><img src="./assets/images/gridMain-5.png " alt=""></a>
                     </div>
                     <div class="img-wrap">
-                        <img src="./assets/images/gridMain-6.png" alt="">
+                    <a href="./assets/images/gridMain-6.png " data-fancybox="gallery" ><img src="./assets/images/gridMain-6.png " alt=""></a>
                     </div>
                     <div class="img-wrap">
-                        <img src="./assets/images/gridMain-7.png" alt="">
+                    <a href="./assets/images/gridMain-7.png " data-fancybox="gallery" ><img src="./assets/images/gridMain-7.png " alt=""></a>
                     </div>
                     <div class="img-wrap row-span-2 col-span-2">
-                        <img src="./assets/images/gridMain-8.png" alt="">
+                    <a href="./assets/images/gridMain-8.png " data-fancybox="gallery" ><img src="./assets/images/gridMain-8.png " alt=""></a>
                     </div>
                     <div class="img-wrap">
-                        <img src="./assets/images/gridMain-9.png" alt="">
+                    <a href="./assets/images/gridMain-9.png " data-fancybox="gallery" ><img src="./assets/images/gridMain-9.png " alt=""></a>
                     </div>
                     <div class="img-wrap">
-                        <img src="./assets/images/gridMain-10.png" alt="">
+                    <a href="./assets/images/gridMain-10.png " data-fancybox="gallery" ><img src="./assets/images/gridMain-10.png " alt=""></a>
                     </div>
 
                 </div>

@@ -1,19 +1,33 @@
 @media only screen and (max-width: 992px) {
 
 
+    .contactCards{
+        justify-content: flex-start;
+    }
+
     .galleryPageGrid{
-        grid-template-columns: repeat(4,auto);
-        grid-template-rows: repeat(4 ,auto);
+            grid-template-columns: repeat(4,auto);
+            grid-template-rows: repeat(4 ,auto);
         gap:5px;
+        width: 100%;
 
 
     }
+
+    .cerificationsMain .panel{
+        margin-bottom: 50px;
+    }
+
     .cateringText{
         text-align: center;
     }
 
     .cateringText + .img-wrap{
         position: static;
+    }
+
+    .cateringForm, .contactForm, .reviewForm{
+        padding: 20px 20px;
     }
 
     .formGrid{
@@ -61,6 +75,7 @@
 
     .innerPageHeading{
         font-size: 50px;
+        margin: 0 auto;
     }
 
     .historyText{

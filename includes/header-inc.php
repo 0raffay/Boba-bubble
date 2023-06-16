@@ -19,8 +19,8 @@
                     <li><a href="location.php">Locations</a></li>
                     <li><a href="catering.php">Catering</a></li>
                     <li><a href="faq.php">FAQs</a></li>
-                    <li><a href="#">Certifications</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="certifications.php">Certifications</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
                 </ul>
             </nav>
 

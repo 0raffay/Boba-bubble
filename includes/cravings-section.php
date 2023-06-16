@@ -7,8 +7,11 @@
                         <p>Quench Your Thirst, Elevate Your Mood, and Indulge in the Ultimate Bubble Tea Experience</p>
                         <a href="#" class="btn btn-primary">Order Now</a>
                     </div>
-                    <div class="cravingsImg animateUpdown">
-                        <img src="./assets/images/cravings-img.png" alt="">
+                    <div class="cravingsImg hideShowImgContainer animateUpdown">
+
+                        <img src="./assets/images/cravings-img.png" alt="" class="hideShowImg hideShowImg1">
+                        <img src="./assets/images/cravings-img.png" alt="" class="hideShowImg hideShowImg2">
+                        <img src="./assets/images/cravings-img.png" alt="" class="hideShowImg hideShowImg3">
                     </div>
                 </div>
             </div>

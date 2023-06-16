@@ -1,4 +1,3 @@
-
 <section class="process">
         <h4>Our <span class="heading-white">Process</span></h4>
         <div class="container">
@@ -25,7 +24,7 @@
                     <div class="img-wrap">
                         <img src="./assets/images/process-4.png" alt="">
                     </div>
-                    <h5>Received </h5>
+                    <h5>Received</h5>
                 </div>
             </div>
         </div>

@@ -57,7 +57,7 @@
 
     <section class="cateringInquery padding-0">
         <div class="container">
-            <div class="reviewForm text-center">
+            <div class="cateringForm text-center">
                 <h4>Catering <span class="heading-white">Enquiries</span></h4>
                 <form action="">
                     <div class="formGrid">

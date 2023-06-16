@@ -23,31 +23,36 @@
             <h1 class="innerPageHeading">Our Location</h1>
 
             <div class="panel">
-                <div class="addressCards">
-                    <img src="./assets/images/address01.png" alt="">
-                    <h6>Head Office</h6>
-                    <p>120 A, Sky comfort, Sindhi Muslim Cooperative Housing Society Block A Sindhi Muslim CHS (SMCHS),
-                        Karachi, Karachi City, Sindh</p>
-                </div>
-                <div class="addressCards">
-                    <img src="./assets/images/address02.png" alt="">
-                    <h6>DHA- Branch</h6>
-                    <p>120 A, Sky comfort, Sindhi Muslim Cooperative Housing Society Block A Sindhi Muslim CHS (SMCHS),
-                        Karachi, Karachi City, Sindh</p>
-                </div>
-                <div class="addressCards">
-                    <img src="./assets/images/address03.png" alt="">
-                    <h6>SMCHS Branch</h6>
-                    <p><img src="./assets/images/lastAddress.png" alt=""></p>
-
-                </div>
+                <a href="#map">
+                    <div class="addressCards">
+                        <img src="./assets/images/address01.png" alt="">
+                        <h6>Head Office</h6>
+                        <p>120 A, Sky comfort, Sindhi Muslim Cooperative Housing Society Block A Sindhi Muslim CHS (SMCHS),
+                            Karachi, Karachi City, Sindh</p>
+                    </div>
+                </a>
+                <a href="#map">
+                    <div class="addressCards">
+                        <img src="./assets/images/address02.png" alt="">
+                        <h6>DHA- Branch</h6>
+                        <p>120 A, Sky comfort, Sindhi Muslim Cooperative Housing Society Block A Sindhi Muslim CHS (SMCHS),
+                            Karachi, Karachi City, Sindh</p>
+                    </div>
+                </a>
+                <a href="#map">
+                    <div class="addressCards">
+                        <img src="./assets/images/address03.png" alt="">
+                        <h6>SMCHS Branch</h6>
+                        <p><img src="./assets/images/lastAddress.png" alt=""></p>
+                    </div>
+                </a>
             </div>
 
         </div>
     </section>
 
 
-    <section class="maps">
+    <section class="maps" id="map">
         <iframe class="map-1"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.0072566136805!2d67.05236837601825!3d24.86360174513073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f1b214413d1%3A0xc765a41fdd6a6522!2sBoba%20Bubble%20SMCHS!5e0!3m2!1sen!2s!4v1686841003626!5m2!1sen!2s"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -64,46 +69,14 @@
 
 
 
-    <?php include('includes/about-us-section.php') ?>
 
-    <section class="reviews">
-        <div class="container">
-            <div class="reviewForm text-center">
-                <h4>Submit a Review to Get a Discount</h4>
-                <form action="">
-                    <div class="formGrid">
-                        <div>
-                            <label for="">First Name</label>
-                            <input type="text">
-                        </div>
-                        <div>
-                            <label for="">Last Name</label>
-                            <input type="text">
-                        </div>
-                        <div>
-                            <label for="">Email Address</label>
-                            <input type="email">
-                        </div>
-                        <div class="rating-stars">
-                            <label>Rate Bubble Tea</label>
-                            <img src="./assets/images/start-img.png" alt="">
-
-                        </div>
-
-                        <div class="col-span-2">
-                            <label for="rev-msg">Type Your Review</label>
-                            <textarea name="" id="rev-msg" cols="30" rows="10"></textarea>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Review</button>
-                </form>
-            </div>
-        </div>
-    </section>
 
 
     <?php include('includes/process-section.php') ?>
     <?php include('includes/cravings-section.php') ?>
+    <?php include('includes/gallery-section.php') ?>
+
+    <?php include('includes/about-us-section.php') ?>
 
 
     <?php include('includes/footer-inc.php') ?>

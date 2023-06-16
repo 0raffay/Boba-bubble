@@ -16,7 +16,7 @@
                         sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit,
                         sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia
                         nostra, per inceptos himenaeos. </p>
-                    <h6>Price:$50</h6>
+                    <h6>Price: $50</h6>
 
                     <a href="#" class="btn btn-inverse">Add to Cart</a>
                 </div>

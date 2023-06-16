@@ -5,7 +5,14 @@ $(document).ready(function () {
     menuTabs()
     maps()
     accordion()
+    starIcons()
+    imgShow()
 })
+
+// fancyBox
+Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+});
 
 
 function sliders() {
@@ -82,6 +89,8 @@ function menuOpen() {
     const arrowUp = $('.arr-up')
     const arrowDown = $('.arr-down')
     let isOpen = false;
+
+    arrowUp.hide()
 
     menuBtn.click(function () {
         if (isOpen) {
@@ -166,23 +175,40 @@ function accordion() {
 
 }
 
+function starIcons() {
+    const icons = $('.starIcons svg')
 
+    icons.click(function () {
+        icons.css({ 'fill': 'transparent' })
+        var thisIcon = $(this).index()
+        for (let i = 0; i <= thisIcon; i++) {
+            var arrayIcons = $(icons[i])
+            arrayIcons.css({ 'fill': 'gold'})
+        }
+    })
+}
 
+function imgShow() {
+    const hideShowImgs = $('.hideShowImg');
+    let currentIndex = 0;
+  
+    // Hide all images except the first one
+    hideShowImgs.not(':first').hide();
+  
+    setInterval(function() {
+      const currentImg = $(hideShowImgs[currentIndex]);
+      const nextIndex = (currentIndex + 1) % hideShowImgs.length;
+      const nextImg = $(hideShowImgs[nextIndex]);
+  
+      currentImg.fadeOut(1000, function() {
+        nextImg.fadeIn(1000);
+      });
 
-// buttons.each(function(index) {
-//     $(this).click(function() {
-//       buttons.removeClass('active');
-//       $(this).addClass('active');
+  
+      currentIndex = nextIndex;
+    }, 3000);
+  }
 
-//       var thisButtonIndex = index;
-//       var thisTabsText = tabsText.eq(thisButtonIndex);
-
-//       // tabsText.css('display', 'none');
-//       tabsText.hide()
-//       thisTabsText.show()
-//       // thisTabsText.css('display', 'block');
-
-//       // console.log(thisButtonIndex);
-//       // console.log(thisTabsText);
-//     });
-//   });
+  
+  
+  
