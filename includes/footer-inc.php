@@ -33,15 +33,15 @@
                             <ul>
                                 <li><a href="#">Boba Bubble Tea</a></li>
                                 <li><a href="#">Shop All</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Our Menu</a></li>
+                                <li><a href="about-us.php">About Us</a></li>
+                                <li><a href="menu.php">Our Menu</a></li>
                             </ul>
                         </div>
                         <div class="footerLinks">
                             <h5>Support</h5>
                             <ul>
-                                <li><a href="#">FAQs</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="faq.php">FAQs</a></li>
+                                <li><a href="contact.php">Contact Us</a></li>
                                 <li><a href="#">Terms & Conditions</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
                             </ul>
@@ -58,7 +58,7 @@
                         <h5>Subscribe Our Newsletter For Amazing Deals</h5>
                         <div class="newsInput">
                             <input type="email" placeholder="Enter Your Email Address">
-                            <button href="#" class="">Subscribe</button>
+                            <button class="">Subscribe</button>
                         </div>
                     </div>
 
@@ -67,25 +67,33 @@
 
             <div class="ftAddress">
                 <div class="panel">
-                    <div class="address">
-                        <h5>Head Office</h5>
-                        <p>120 A, Sky comfort, Sindhi Muslim Cooperative Housing Society Block A Sindhi Muslim CHS
-                            (SMCHS), Karachi, Karachi City, Sindh</p>
-                    </div>
-                    <div class="address">
-                        <h5>DHA- Branch</h5>
-                        <p>120 A, Sky comfort, Sindhi Muslim Cooperative Housing Society Block A Sindhi Muslim CHS
-                            (SMCHS), Karachi, Karachi City, Sindh</p>
-                    </div>
-                    <div class="address">
-                        <h5>SMCHS Branch</h5>
-                        <p>120 A, Sky comfort, Sindhi Muslim Cooperative Housing Society Block A Sindhi Muslim CHS
-                            (SMCHS), Karachi, Karachi City, Sindh</p>
-                    </div>
+                    <a href="location.php">
+                        <div class="address">
+                            <h5>Head Office</h5>
+                            <p>120 A, Sky comfort, Sindhi Muslim Cooperative Housing Society Block A Sindhi Muslim CHS
+                                (SMCHS), Karachi, Karachi City, Sindh</p>
+                        </div>
+                    </a>
+                    <a href="location.php">
+                        <div class="address">
+                            <h5>DHA- Branch</h5>
+                            <p>120 A, Sky comfort, Sindhi Muslim Cooperative Housing Society Block A Sindhi Muslim CHS
+                                (SMCHS), Karachi, Karachi City, Sindh</p>
+                        </div>
+                    </a>
+                    <a href="location.php">
+                        <div class="address">
+                            <h5>SMCHS Branch</h5>
+                            <p>120 A, Sky comfort, Sindhi Muslim Cooperative Housing Society Block A Sindhi Muslim CHS
+                                (SMCHS), Karachi, Karachi City, Sindh</p>
+                        </div>
+                    </a>
 
-                    <div class="address">
-                        <h5>Lucky One Branch: <span>(Coming Soon)</span></h5>
-                    </div>
+                    <a href="location.php">
+                        <div class="address">
+                            <h5>Lucky One Branch: <span>(Coming Soon)</span></h5>
+                        </div>
+                    </a>
                 </div>
             </div>
 

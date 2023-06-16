@@ -7,6 +7,7 @@ $(document).ready(function () {
     accordion()
     starIcons()
     imgShow()
+    imgShow_2()
 })
 
 // fancyBox
@@ -40,9 +41,13 @@ function sliders() {
     $('.toppingSlider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
+        autoplaySpeed: 6000,
         arrows: false,
         dots: true,
+        customPaging: function (slider, i) {
+            return '<span class="dotSvgSpan"><svg><circle r="18" cx="20" cy="20"></circle></svg></span>';
+        }
     })
 
     $('.bannerSlider').slick({
@@ -183,7 +188,7 @@ function starIcons() {
         var thisIcon = $(this).index()
         for (let i = 0; i <= thisIcon; i++) {
             var arrayIcons = $(icons[i])
-            arrayIcons.css({ 'fill': 'gold'})
+            arrayIcons.css({ 'fill': 'gold' })
         }
     })
 }
@@ -191,24 +196,61 @@ function starIcons() {
 function imgShow() {
     const hideShowImgs = $('.hideShowImg');
     let currentIndex = 0;
-  
+
     // Hide all images except the first one
     hideShowImgs.not(':first').hide();
-  
-    setInterval(function() {
-      const currentImg = $(hideShowImgs[currentIndex]);
-      const nextIndex = (currentIndex + 1) % hideShowImgs.length;
-      const nextImg = $(hideShowImgs[nextIndex]);
-  
-      currentImg.fadeOut(1000, function() {
-        nextImg.fadeIn(1000);
-      });
 
-  
-      currentIndex = nextIndex;
+    setInterval(function () {
+        const currentImg = $(hideShowImgs[currentIndex]);
+        const nextIndex = (currentIndex + 1) % hideShowImgs.length;
+        const nextImg = $(hideShowImgs[nextIndex]);
+
+        currentImg.fadeOut(1000, function () {
+            nextImg.fadeIn(1000);
+        });
+
+
+        currentIndex = nextIndex;
     }, 3000);
-  }
+}
+function imgShow_2() {
+    const hideShowImgs = $('.hideShowImg-2');
+    let currentIndex = 0;
 
+    // Hide all images except the first one
+    hideShowImgs.not(':first').hide();
+
+    setInterval(function () {
+        const currentImg = $(hideShowImgs[currentIndex]);
+        const nextIndex = (currentIndex + 1) % hideShowImgs.length;
+        const nextImg = $(hideShowImgs[nextIndex]);
+
+        currentImg.fadeOut(1000, function () {
+            nextImg.fadeIn(1000);
+        });
+
+
+        currentIndex = nextIndex;
+    }, 3000);
+}
+
+var currentUrl = window.location.pathname;
+
+
+function activeNav() {
+    var currentUrl = window.location.pathname;
+
+    var url = currentUrl.replace('/bobabubble/', "")
+    
+
+    $('header li').each(function() {
+      var link = $(this).find('a').attr('href');
+      
+      if (url === link) {
+        $(this).addClass('active');
+      }
+    });
+  }
   
-  
-  
+  // Call the activeNav function to highlight the active navigation link
+  activeNav();
