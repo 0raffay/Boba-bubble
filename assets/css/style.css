@@ -34,6 +34,22 @@ ul {
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #e7e7e7; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e161a4;
+  /* height: 5px;  */
+  border-radius: 5px;
+}
+
+
 .flex {
   display: flex;
 }
@@ -1653,6 +1669,7 @@ section.history>h4 {
 /* unique end */
 
 /* teams */
+.team.low-opacity::after, .team.low-opacity::before{height: 80%;}
 
 .team .hr-animation-container {
   gap: 55px;
