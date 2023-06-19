@@ -32,7 +32,6 @@
 
 
     <section class="about">
-        <h4>What They Say <span class="heading-white">About Us</span></h4>
         <img src="./assets/images/about-top.png" class="about-overlay" alt="">
         <div class="container-fluid">
 

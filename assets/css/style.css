@@ -766,7 +766,7 @@ header .container {
 
 .category .slick-slide.slick-center img.catItemBg {
   visibility: initial;
-  animation: fadeInDesktop 2s;
+  animation: fadeInDesktop 1s;
   scale: 1.3;
 }
 
@@ -843,6 +843,12 @@ header .container {
   display: inline-flex;
   align-items: center;
 }
+
+.shop .hr-animation-container > *{
+  animation-duration: 7s;
+}
+
+
 
 .shop .hr-animation-container:hover>* {
   animation-play-state: paused;
@@ -1850,6 +1856,7 @@ img.sliderMainImg {
 
 
 img.sliderMainImg{
+  left: -5px;
   
   animation: rightLeft 1s linear infinite;
   animation-delay: 2s;
@@ -2051,7 +2058,7 @@ section.ourMenu>h4 {
 .galleryPageGrid {
   display: grid;
   grid-template-columns: repeat(4, 265px);
-  grid-template-rows: repeat(4, 242px);
+  grid-template-rows: repeat(4, 210px);
   gap: 15px;
   grid-auto-flow: dense;
   margin: 0 auto;
@@ -2170,12 +2177,12 @@ max-width: 530px;
   border-radius: 15px;
 
 }
-
+/* 
 input:focus,
 label:focus {
   outline: #E64699;
   border: #E64699;
-}
+} */
 
 .formGrid textarea {
   padding: 20px;
@@ -2411,6 +2418,7 @@ padding-bottom: 195px;
 
 .cerificationsMain {
   padding-bottom: 0;
+  padding-top: 150px;
 }
 
 .cerificationsMain .container {
