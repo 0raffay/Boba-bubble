@@ -27,7 +27,7 @@
 
             <div class="panel">
                 <div class="cateringText">
-                    <h1>Boba Bubble Catering</h1>
+                    <h1>Boba Bubble<span> Catering</span></h1>
                     <p>
                     Boba Bubble began as a dream rooted in a deep appreciation for the art of bubble tea. The founders, avid tea enthusiasts with a passion for creating delightful experiences, embarked on a journey to share their love for this beloved beverage with the world.
                     </p>

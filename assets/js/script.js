@@ -8,6 +8,9 @@ $(document).ready(function () {
     starIcons()
     imgShow()
     imgShow_2()
+    activeNav();
+    shopScroll()
+    scrollColorSwitch()
 })
 
 // fancyBox
@@ -160,6 +163,8 @@ function accordion() {
     const allPanels = $('.acc-container .panels').hide();
     const allhead = $('.acc-container .acc-head')
     $('.acc-container:nth-of-type(1) .panels').show();
+    $('.acc-container:nth-of-type(1) .icon-down').hide();
+    $('.acc-container:nth-of-type(1) .icon-up').show();
 
     $('.acc-container > .acc-head').click(function () {
         if ($(this).hasClass("active")) {
@@ -189,6 +194,7 @@ function starIcons() {
         for (let i = 0; i <= thisIcon; i++) {
             var arrayIcons = $(icons[i])
             arrayIcons.css({ 'fill': 'gold' })
+            $('.starIcons path').css({'stroke': "none"})
         }
     })
 }
@@ -213,6 +219,7 @@ function imgShow() {
         currentIndex = nextIndex;
     }, 3000);
 }
+
 function imgShow_2() {
     const hideShowImgs = $('.hideShowImg-2');
     let currentIndex = 0;
@@ -234,23 +241,40 @@ function imgShow_2() {
     }, 3000);
 }
 
-var currentUrl = window.location.pathname;
-
-
 function activeNav() {
     var currentUrl = window.location.pathname;
 
     var url = currentUrl.replace('/bobabubble/', "")
-    
 
-    $('header li').each(function() {
-      var link = $(this).find('a').attr('href');
-      
-      if (url === link) {
-        $(this).addClass('active');
-      }
+
+    $('header li').each(function () {
+        var link = $(this).find('a').attr('href');
+
+        if (url === link) {
+            $(this).addClass('active');
+        }
     });
-  }
-  
-  // Call the activeNav function to highlight the active navigation link
-  activeNav();
+}
+
+function shopScroll() {
+    const shopContainer = $('.shop .shopCardContainer')
+    var Wwidht = $(window).width()
+
+    if(Wwidht < 767){
+        shopContainer.removeClass('hr-animation-container').addClass('scrollActive')
+    }
+
+}
+
+function scrollColorSwitch(){
+    
+    var Scroll = $(".scrollActive ::-webkit-scrollbar-thumb")
+    var cards = $('.rotate')
+    
+    cards.each(function(){
+        cards.hover(function(){
+            Scroll.css({  "background": "#E64699"})
+        })
+    })
+
+}

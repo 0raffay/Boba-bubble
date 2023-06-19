@@ -26,6 +26,7 @@ a {
 
 a:hover {
   text-decoration: none;
+  color: #E64699;
 }
 
 ol,
@@ -154,7 +155,8 @@ ul {
 
 }
 
-section>h4 {
+section>h4,
+.mainHeading {
   font-style: normal;
   font-weight: 800;
   font-size: 80px;
@@ -169,6 +171,19 @@ section>h4 {
   left: -40px;
   color: #fff;
   z-index: -2;
+  /* height: 200px; */
+  padding: 0 49px;
+  background: url(../images/heading-after.png)  no-repeat;
+  background-size: 100% 100% ;
+}
+
+.cateringForm h4 span.heading-white,
+.contactForm h4 span.heading-white,
+.reviewForm h4 span.heading-white {
+  position: relative;
+  left: -40px;
+  color: #fff;
+  z-index: 3;
   /* height: 200px; */
   padding: 0 49px;
   background: url(../images/heading-after.png)  no-repeat;
@@ -316,10 +331,10 @@ header .container {
 }
 
 .burger-menu>div {
-  width: 45px;
-  height: 8px;
+  width: 37px;
+  height: 5px;
   border-radius: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   background-color: #E64699;
 }
 
@@ -381,6 +396,11 @@ header .container {
   text-align: left;
   /* padding-left: 15px !important; */
   padding: 15px !important;
+}
+
+.openMenuPhone {
+  display: flex;
+  justify-content: space-between;
 }
 
 .openMenuPhone ion-icon {
@@ -614,6 +634,10 @@ header .container {
   animation: 11s slide infinite linear;
 }
 
+.homeBody .gallery {
+  padding-top: 0;
+}
+
 .real {
   padding: 30px 0;
   background-color: #111111;
@@ -767,19 +791,49 @@ header .container {
 
 /* shops start */
 
-.shop .hr-animation-container {
+.scrollActive{
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  gap: 20px !important;
+  width: 100%;
+  min-height: 460px;
+}
 
-  min-height: 500px;
-  display: inline-flex;
-  align-items: center;
+/* width */
+.scrollActive::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.scrollActive::-webkit-scrollbar-track {
+    background: #fff; 
+}
+ 
+/* Handle */
+
+.scrollActive::-webkit-scrollbar-thumb {
+  background: #4284C5;
+  height: 5px; 
+  border-radius: 5px;
+}
+
+
+.shop .hr-animation-container {
+  min-height: 510px;
 }
 
 .shopCardContainer {
   gap: 55px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .shop .hr-animation-container:hover>* {
   animation-play-state: paused;
+}
+
+.rotate{
+  scroll-snap-align: center;
 }
 
 .shopCards .img-wrap {
@@ -1060,6 +1114,7 @@ li.slick-active .dotSvgSpan  svg circle {
 
 .cravings {
   padding: 0;
+  position: relative;
   background: #4284C5;
 }
 
@@ -1104,7 +1159,7 @@ li.slick-active .dotSvgSpan  svg circle {
 
 .process {
   padding-top: 150px;
-  padding-bottom: 90px;
+  padding-bottom: 150px;
 }
 
 .process .container {
@@ -1136,7 +1191,7 @@ li.slick-active .dotSvgSpan  svg circle {
 /* gallery Start */
 
 .gallery {
-  padding-top: 90px;
+  padding-top: 150px;
   padding-bottom: 150px;
 }
 
@@ -1183,6 +1238,10 @@ li.slick-active .dotSvgSpan  svg circle {
   background-color: #4284C5;
   padding: 70px 0;
   position: relative;
+}
+
+.about .heading-white {
+  z-index: 2;
 }
 
 .about .container-fluid{
@@ -1852,6 +1911,11 @@ section.ourMenu>h4 {
 
 }
 
+.menuTabsHead button:hover {
+  background-color: #e161a4;
+  color: #fff;
+}
+
 .menuTabsHead button.active {
   background: #E64699;
   color: #FAF7F2;
@@ -1863,7 +1927,7 @@ section.ourMenu>h4 {
   align-items: center;
   min-height: 450px;
   width: max-content;
-  margin: 0 auto;
+  margin: 20px auto;
 
 }
 
@@ -1908,6 +1972,8 @@ section.ourMenu>h4 {
 }
 
 .ourMenu .container {
+  padding: 0;
+  max-width: 1400px;
   text-align: center;
 }
 
@@ -2006,6 +2072,15 @@ max-width: 530px;
 
 /* reviews page */
 
+.reviews {
+  padding-top: 150px;
+  padding-bottom: 0;
+}
+
+.reviews h4{
+  width: 100%;
+}
+
 .reviews .container {
   max-width: 1265px;
 }
@@ -2013,7 +2088,7 @@ max-width: 530px;
 .cateringForm,
 .contactForm,
 .reviewForm {
-  padding: 79px 177px 72px 124px;
+  padding: 79px 82px 72px 124px;
   max-width: 1256px;
   width: 100%;
 
@@ -2079,6 +2154,12 @@ max-width: 530px;
 
 }
 
+input:focus,
+label:focus {
+  outline: #E64699;
+  border: #E64699;
+}
+
 .formGrid textarea {
   padding: 20px;
   min-height: 226px;
@@ -2120,13 +2201,17 @@ max-width: 530px;
 
 /* location */
 
+.maps {
+  padding-bottom: 0;
+}
+
 .locationBanner .container {
   max-width: 1256px;
   margin: 0 auto;
 }
 
 .addressCards {
-  background: rgba(0, 0, 0, 0.05);
+  background: #edebe6;
   border-radius: 15px;
   width: 100%;
   max-width: 396px;
@@ -2190,6 +2275,7 @@ cursor: pointer;
 
 .cateringBanner {
   padding-top: 70px;
+  padding-bottom: 0;
 }
 
 .noPlaceholder::-webkit-input-placeholder {
@@ -2245,6 +2331,11 @@ cursor: pointer;
 }
 
 /* faqs */
+
+.faq {
+  padding-top: 0;
+}
+
 .faqsBody {
   background-color: #FAF7F2;
 }
@@ -2261,7 +2352,6 @@ cursor: pointer;
 
 .acc-head {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   cursor: pointer;
 }
@@ -2296,6 +2386,11 @@ cursor: pointer;
 }
 
 /* certifications */
+
+.certificationsBody .process{ 
+padding-bottom: 195px;
+}
+.certificationsBody .gallery {padding-top: 150px;}
 
 .cerificationsMain {
   padding-bottom: 0;
@@ -2341,6 +2436,10 @@ cursor: pointer;
 /* certification End */
 
 /* contact Page */
+
+.contact {
+  padding-bottom: 195px;
+}
 
 .contactInfo .container {
   max-width: 1226px;

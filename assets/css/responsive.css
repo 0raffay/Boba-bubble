@@ -1,6 +1,5 @@
 @media only screen and (max-width: 992px) {
 
-
     .contactCards {
         justify-content: flex-start;
     }
@@ -20,6 +19,11 @@
 
     .cerificationsMain .panel {
         margin-bottom: 50px;
+    }
+
+    .cerificationsMain .panel:nth-child(even) {
+        flex-direction: column-reverse;
+
     }
 
     .cateringText {
@@ -188,13 +192,136 @@
         flex-wrap: wrap;
     }
 
+    .faqText {
+        text-align: center;
+    }
+
+    .cateringForm h4 span.heading-white, .contactForm h4 span.heading-white, .reviewForm h4 span.heading-white {
+        position: static;
+        padding: 0;
+        background: none;
+    }
 }
 
 @media only screen and (max-width: 767px) {
 
-    section.history>h4{
+    .certificationCards {
+        padding: 24px 24px;
+    }
+
+    .newsInput {
+        justify-content: space-between;
+    }
+
+    .newsInput button {
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+
+    .cateringText h1 span {
+        color: #E64699;
+    }
+
+    .panels p {
+        font-size: 18px;
+        padding: 5px;
+        line-height: 23px;
+    }
+        
+    .acc-head h5 {
+        font-size: 21px;
+    }
+        
+    .acc-head {
+        padding: 0 5px;
+        gap: 5px;
+    }
+
+    .locationBanner .panel {
+        gap: 40px;
+    }
+
+    .locationBanner h1 {
+        margin-bottom: 50px;
+    }
+
+    .formGrid label {
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+
+    .cateringForm h4, .contactForm h4, .reviewForm h4 {
+        font-size: 38px;
+        margin-bottom: 50px;
+    }
+
+    .formGrid input{
+        padding: 10px 10px;
+    }
+
+    .cateringForm h4 span.heading-white, .contactForm h4 span.heading-white, .reviewForm h4 span.heading-white {
+        color: #E64699;
+    }
+
+
+    .ft-pictures {
+        margin-bottom: 40px;
+    }
+
+    .ftTimings {
+        margin-bottom: 20px;
+    }
+
+    .galleryBanner .innerPageContainer .img-wrap{
+        margin-bottom: 50px;
+    }
+
+    .galleryPageGrid {
+        margin-bottom: 50px;
+    }
+
+    .about-overlay{
+        left: -12px;
+        width: 800px;
+    }
+
+    .ftAddress .panel {
         margin-bottom: 30px;
-    }   
+    }
+
+    .offerOverlay {
+        padding: 5px 0;
+        width: 100%;
+        left: -42%;
+        top: 3%;
+    }
+
+    .offerOverlay span {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .innerPageHeading {
+        font-size: 38px;
+
+    }
+
+    .toppingSlider .slick-dots {
+        justify-content: center;
+    }
+
+    .cerificationsMain .panel {
+        text-align: center;
+    }
+
+    .faqText+.img-wrap,
+    .cateringText+.img-wrap {
+        position: static;
+    }
+
+    section.history>h4 {
+        margin-bottom: 30px;
+    }
 
     section {
         padding: 30px 0 !important;
@@ -297,17 +424,65 @@
     }
 
     footer {
-        padding: 50px 0;
+        padding: 50px 0 0;
     }
 
     .container,
-    .container-fluid{
+    .container-fluid {
         padding: 0 10px;
     }
 
 }
 
 @media only screen and (max-width: 480px) {
+
+    .ourToppings .shopNowButton, 
+    .ourFlavors .shopNowButton {
+        left: -6%;
+    }
+
+    .ourToppings .shopCards h5 {
+        transform: translateX(-50%) translateY(-39px);
+    } 
+
+    /* .ourToppings .shopCards .img-wrap{
+        min-height: auto;
+    } */
+
+    .menuTabsPanels .shopCards:hover h5 {
+        transform: translateX(-70%) rotate(-3deg) translateY(-17px) scale(0.9);
+    }
+
+    .menuTabsHead {
+        flex-direction: column;
+    }
+
+    .menuTabsHead button {
+        font-size: 20px;
+        padding: 20px 20px;
+        border-radius: 10px;
+    }
+
+
+    .slidingBannerText h1 {
+        font-size: 50px;
+    }
+
+    .slidingBannerText p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    section.slidingBanner {
+        padding: 60px 0 !important;
+    }
+
+    .offerOverlay {
+        padding: 5px 0;
+        width: 100%;
+        left: -32%;
+        top: 3%;
+    }
 
 
     .low-opacity::before,
@@ -335,8 +510,8 @@
 
 
     section>h4 {
-        font-size: 25px;
-        margin-bottom: 20px;
+        font-size: 30px;
+        margin-bottom: 40px !important;
     }
 
     section.history>h4 {
@@ -348,7 +523,16 @@
     }
 
     .shopCards {
-        padding: 25px 25px 28px;
+        padding: 25px 35px 28px;
+        height: auto;
+    }
+
+    .shopCards:hover {
+        height: 385px;
+    }
+
+    .shopCards:hover h5 {
+        transform: translateX(-70%) rotate(-3deg) translateY(17px) scale(0.9);
     }
 
     .shopCards h5 {
@@ -356,7 +540,8 @@
     }
 
     .shopCards .img-wrap {
-        scale: 0.8;
+        scale: 1;
+        min-height: 265px;
     }
 
     .shopNowButton {
@@ -374,9 +559,14 @@
         padding: 0 15px;
     }
 
-    .slick-slide img {
+
+    .slick-slide img.sliderMainImg {
         max-width: 75%;
         margin: 0 auto;
+    }
+
+    img.popOutImg {
+        bottom: 0;
     }
 
     .cravingsImg {

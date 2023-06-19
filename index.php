@@ -11,7 +11,7 @@
     <title>Home - Boba Bubble</title>
 </head>
 
-<body>
+<body class="homeBody">
 
     <?php include('includes/header-inc.php') ?>
 

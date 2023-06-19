@@ -370,7 +370,7 @@
     <section class="reviews">
         <div class="container">
             <div class="reviewForm text-center">
-                <h4>Submit a Review to Get a <span class="heading-white">Discount</span></h4>
+                <h4 class="mainHeading">Submit a Review to Get a <span class="heading-white">Discount</span></h4>
                 <form action="">
                     <div class="formGrid">
                         <div>
