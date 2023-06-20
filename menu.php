@@ -12,7 +12,7 @@
     <title>Our Menu</title>
 </head>
 
-<body>
+<body class="menuBody">
 
     <?php include('includes/header-inc.php') ?>
 

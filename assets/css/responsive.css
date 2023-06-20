@@ -486,7 +486,7 @@
     } */
 
     .menuTabsPanels .shopCards:hover h5 {
-        transform: translateX(-90%) rotate(-3deg) translateY(-17px) scale(0.9);
+        transform: translateX(-70%) rotate(-3deg) translateY(-17px) scale(0.9);
     }
 
     .menuTabsHead {
@@ -572,7 +572,7 @@
     }
 
     .shopCards h5 {
-        font-size: 16px;
+        font-size: 19px;
     }
 
     .shopCards .img-wrap {
@@ -582,7 +582,7 @@
 
     .shopNowButton {
         scale: 0.8;
-        left: -8%;
+        left: -6.5%;
     }
 
     .addButton {

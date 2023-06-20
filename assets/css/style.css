@@ -1959,6 +1959,11 @@ section.ourMenu>h4 {
   padding-bottom: 150px;
 }
 
+.menuBody .process{
+  padding-bottom: 0;
+}
+
+
 .ourMenu .container {
   max-width: 1300px;
 }
