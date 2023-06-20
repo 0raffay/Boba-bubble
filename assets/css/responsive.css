@@ -214,6 +214,33 @@
 
 @media only screen and (max-width: 767px) {
 
+    .formGrid>div {
+        margin-bottom: 25px;
+    }
+
+    .formGrid textarea {
+        height: 180px;
+    }
+
+    .aboutAnimationContainer {
+        gap: 40px;
+    }
+    .aboutcards {
+        max-width: 250px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
+
+    .aboutcards:before,
+    .aboutcards:after {
+        display: none;
+    }
+
+    .aboutCardText {
+        text-align: center;
+    }
+
     .certificationCards {
         padding: 24px 24px;
     }
@@ -397,7 +424,7 @@
     }
 
     .banner .container img {
-        height: 70vh;
+        height: 60vh;
     }
 
     .realCard h5 {
@@ -459,7 +486,7 @@
     } */
 
     .menuTabsPanels .shopCards:hover h5 {
-        transform: translateX(-70%) rotate(-3deg) translateY(-17px) scale(0.9);
+        transform: translateX(-90%) rotate(-3deg) translateY(-17px) scale(0.9);
     }
 
     .menuTabsHead {

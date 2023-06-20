@@ -18,7 +18,7 @@
 
 
 
-    <section class="galleryBanner">
+    <section class="reviewsBanner">
         <div class="container innerPageContainer">
             <h1 class="innerPageHeading">Reviews</h1>
             <div class="img-wrap">

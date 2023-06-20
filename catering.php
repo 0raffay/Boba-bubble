@@ -37,9 +37,6 @@
                     <p>
                     Driven by a commitment to excellence, Boba Bubble has evolved into a haven for tea lovers seeking exceptional bubble tea. Every aspect of the brand is carefully curated, from the warm and inviting atmosphere of their stores to the friendly and knowledgeable staff who guide customers through their bubble tea journey.
                     </p>
-
-
-
                 </div>
                 <div class="img-wrap">
                     <img src="./assets/images/cateringMain1.png" alt="">
@@ -75,7 +72,12 @@
                         </div>
                         <div>
                             <label>Occasion Type</label>
-                            <input type="text">
+                            <select name="" id="" placehold>
+                                <op value=""></op/tion>
+                                <option value="wedding">Birthday</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="wedding">Anniversaries</option>
+                            </select>
                         </div>
                         <div>
                             <label>Occasion Date</label>
